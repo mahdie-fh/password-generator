@@ -7,6 +7,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
 public fpassword!:string
 
   public formGroup: FormGroup = new FormGroup({
@@ -58,7 +59,6 @@ public fpassword!:string
 
       password += finalCharacters.substring(randomNumber, randomNumber + 1);
     }
-    console.log(password);
     this.fpassword=password
   }
 
